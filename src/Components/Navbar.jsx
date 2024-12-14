@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-2xl font-semibold font-lora text-gray-800">Horegshopu</div>
 
-        {/* Menu untuk tampilan desktop (Home, About, Features, Contact) */}
+        {/* Menu untuk tampilan desktop */}
         <div className="hidden md:flex space-x-8 items-center">
           <ul className="flex space-x-8">
             <li><a href="#Main" className="text-black-400 hover:text-gray-400 transition duration-300">Home</a></li>
@@ -32,8 +32,7 @@ const Navbar = () => {
           >
           <FaSearch className="w-6 h-6" />
           </button>
-
-           {/* Search Bar (Toggle visibility when search icon is clicked) */}
+          
             {isSearchOpen && (
             <input
               type="text"
